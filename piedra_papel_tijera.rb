@@ -27,17 +27,16 @@ if jugador_1 == 'piedra' || jugador_1 == 'papel' || jugador_1 == 'tijera'
         
     elsif jugador_2 == 'salir'
         puts 'Ha salido del juego.'
-    else
+
+    elsif jugador_2 != 'piedra' || jugador_2 != 'papel' || jugador_2 != 'tijera' || jugador_2 != 'salir'
         puts 'Jugador 2: La opción no es válida.'
-        jugador_2 = gets.chomp
     end
 
 elsif jugador_1 == 'salir'
     puts 'Ha salido del juego.'
-else
-    puts 'Jugador 1: La opción no es válida.' 
-    jugador_1 = gets.chomp
-end 
+elsif jugador_1 != 'piedra' || jugador_1 != 'papel' || jugador_1 != 'tijera' || jugador_1 != 'salir'
+    puts 'Jugador 1: La opción no es válida.'
+end
 
 
 
